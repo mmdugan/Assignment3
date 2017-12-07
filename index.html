@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Set a page title -->
+    <title>Tanning Weather App</title>
+
+    <!-- Site Styles -->
+    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+
+  <body>
+    <div class="sans-serif">
+
+      <!-- If there is an error, this box is shown. 'dn' is the only required class -->
+      <div id="error" class="dn bg-red white pa4 fixed bottom-0 w-100">
+        Sorry, no tanning in that city today.
+      </div>
+
+<h1><span id="temp"></span></h1>
+
+
+      <!-- Search Box -->
+      <form id="location-search" class="pa4">
+        <h2 class="flex flex-wrap items-baseline">
+          <span class="mr3 mb2">
+            Today I am tanning in:
+          </span>
+          <input type="text" id="area" value="Boston" class="flex-auto">
+        </h2>
+      </form>
+
+
+      <!-- Content -->
+<div class="flex flex-wrap pa4">
+  <div class="w-100 w-50-m w-third-l">
+    <h3>Location</h3>
+    <p>City: <span id="location-name"></span></p>
+    <p>Country: <span id="country"></span></p>
+  </div>
+
+  <div class="w-100 w-50-m w-third-l">
+    <h3>Temperature</h3>
+    <p>Max Temp: <span id="temp-max"></span></p>
+    <p>Min Temp: <span id="temp-min"></span></p>
+  </div>
+
+  <div class="w-100 w-50-m w-third-l">
+    <h3>Weather</h3>
+    <p>Condition: <span id="condition"></span></p>
+    <p>Wind Speed: <span id="wind-speed"></span>mph</p>
+  </div>
+</div>
+
+</div>
+
+
+      <table>
+        <tr>
+          <th>UV Index</th>
+          <th>Rating</th>
+          <th>Description</th>
+        </tr>
+        <tr>
+          <td>2 or less</td>
+          <td>Low</td>
+          <td>No danger to the average person</td>
+        </tr>
+        <tr>
+          <td>3-5</td>
+          <td>Moderate</td>
+          <td>Little risk of harm from unprotected sun exposure</td>
+        </tr>
+        <tr>
+          <td>6 to 7</td>
+          <td>High</td>
+          <td>High risk of harm from unprotected sun exposure</td>
+        </tr>
+      </table>
+
+
+
+
+    <!-- Site JavaScript -->
+    <script src="/javascript/toggleClass.js" charset="utf-8"></script>
+    <script src="/javascript/main.js" charset="utf-8"></script>
+    <script src="/javascript/weather.js" charset="utf-8"></script>
+  </body>
+</html>

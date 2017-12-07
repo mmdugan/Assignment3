@@ -1,0 +1,62 @@
+/* ========================================
+ * CSS written here will override Tachyons
+ * ======================================== */
+
+ h1{
+   font-family: Impact, Arial, Serif;
+   text-align: center;
+   font-size: 100pt;
+ }
+
+table {
+  border-collapse: collapse;
+  width:100%;
+}
+
+th, td{
+  padding:20px;
+  text-align: center;
+  border-bottom: 1px solid Peru;
+  font-family: Impact, Arial, Serif;
+}
+
+
+
+ h2{
+   font-family: Impact, Arial, Serif;
+   font-size: 40pt;
+ }
+
+ h3{
+   font-family: Impact, Arial, Serif;
+   font-size: 20pt;
+ }
+
+ p{
+   font-family: Impact, Arial, Serif;
+ }
+
+ input{
+     font-family: Impact, Arial, Serif;
+     color: Peru;
+ }
+
+ body{
+   color: Peru;
+ }
+
+.warm{
+  background-color:PeachPuff;
+  background-size: cover;
+
+}
+
+.hot{
+  background-color: SaddleBrown;
+  background-size: cover;
+}
+
+.cold{
+  background-color: AntiqueWhite;
+  background-size: cover;
+}
